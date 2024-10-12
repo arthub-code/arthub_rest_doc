@@ -70,5 +70,6 @@ No Angular, usamos o HttpClient para fazer chamadas HTTP. Para adicionar o token
 
       return this.http.get(this.apiUrl, { headers });
    }
+```
    
 Toda validação do id do usuário é feita através do token JWT fornecido pelo serviço de autenticação. É **regra** do sistema de microserviços **NÃO** transitar o id de conta de usuário nos objetos de payload.
