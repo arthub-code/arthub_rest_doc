@@ -30,7 +30,6 @@ sidebar_label: Artes
     {
         "artName": "Art name",
         "haveSchedule": true,
-        "accountId": "{useraccount-id}",
         "startScheduleDate": "2024-10-04",
         "endScheduleDate": "2024-10-05",
         "artImageRef": [

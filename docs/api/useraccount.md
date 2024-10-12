@@ -68,7 +68,6 @@ sidebar_label: Contas de Usuário
     "data": {
         "authenticated": true,
         "message": "User authenticated!",
-        "accountId": "{accountId}",
         "username": "@vitin",
         "token": "{tokenJwt}"
     }
