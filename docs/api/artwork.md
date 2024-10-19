@@ -178,3 +178,30 @@ Exemplo de respota de sucesso:
   Apaga todos os dados de uma arte e de suas entidades filhas, ou seja, é uma deleção por completo. Atualmente uma vez em que os dados forem apagados, jamais poderão ser recuperados. Futuramente iremos trabalhar em uma implementação de soft delete, onde incluiremos um backup dos dados 'deletados'. 
   
   Esse endpoint não retorna corpo de resposta, apenas um status de `204 - No Content`, o que significa que a arte foi deletada por completo com sucesso.
+
+
+- ## **Mudar status da arte**
+  **PATCH:** `/art/v1/changeStatus?artId={artId}&status={status}`<br/>
+  **HEADER - Authorization: Bearer Token**<br/>
+  Altera o status de uma arte registrada no sistema do Arthub. Esta operação requer um `artId` e um novo `status` para a arte. O status da arte deve seguir uma ordem lógica de progresso, conforme as regras abaixo:
+
+  ### Regras de mudança de status:
+  - Uma arte registrada começa com o status **TODO** e pode progredir para **PROGRESS**.
+  - A partir do status **PROGRESS**, a arte pode ser finalizada (**FINISHED**) ou arquivada (**DRAWNER**).
+  - **Não é permitido voltar ao status TODO** após a arte ter iniciado o progresso.
+  - Caso uma arte esteja arquivada (**DRAWNER**) ou finalizada (**FINISHED**), ela pode ser reaberta para progresso retornando ao status **PROGRESS**.
+  - **Não é permitido** mudar diretamente de **FINISHED** para **DRAWNER** ou vice-versa.
+
+  ### Status disponíveis:
+  - `TODO`: Arte ainda não iniciada.
+  - `PROGRESS`: Arte em progresso.
+  - `FINISHED`: Arte finalizada.
+  - `DRAWNER`: Arte arquivada.
+
+  **Exemplo de resposta de sucesso:**
+  ```json
+  {
+      "status": 200,
+      "hasErrors": false,
+      "data": "Status changed successfully."
+  }
