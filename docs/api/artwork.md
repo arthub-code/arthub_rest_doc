@@ -380,7 +380,7 @@ Exemplo de respota de sucesso:
   - Caso uma arte esteja arquivada (**DRAWNER**) ou finalizada (**FINISHED**), ela pode ser reaberta para progresso retornando ao status **PROGRESS**.
   - **Não é permitido** mudar diretamente de **FINISHED** para **DRAWNER** ou vice-versa.
 
-  ### Status disponíveis:
+  Status disponíveis:
   - `TODO`: Arte ainda não iniciada.
   - `PROGRESS`: Arte em progresso.
   - `FINISHED`: Arte finalizada.
@@ -403,11 +403,11 @@ Exemplo de respota de sucesso:
   ### Regras de mudança de visibilidade:
   - Para uma arte se tornar pública ela deve ter uma imagem produto associada primeiro.
 
-  ### Status disponíveis:
+  Visibilidades disponíveis:
   - `PUBLIC`: Visível para consulta pública, inclusive no perfil artístico.
   - `PRIVATE`: Privada para consulta pública, apenas a artista tem acessso.
   - `NOT_LISTED`: Privada para consulta pública, exceto para quem possuir o link de acesso.
-  
+
 
 - ## **Associar uma imagem produto à uma arte**
   **PATCH:** `/art/v1/imgProduct/add?artId={artId}&file={file_bytes}`<br/>
