@@ -215,7 +215,7 @@ sidebar_label: Artes
   ```
 
 - ## **Atualizar dados da arte**
-  **GET:** `/art/v1/update?artId={artId}`<br/>
+  **PUT:** `/art/v1/update?artId={artId}`<br/>
   **HEADER - Authorization: Bearer Token**<br/>
   Edita os dados da arte, exceto as imagens de referências e entre outras entidades filhas. Caso queria atualizar esses dados é necessário utilizar endpoints separados.
   Essa requisição requer o parâmetro `artId` para o funcionamento adequado.
