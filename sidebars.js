@@ -23,5 +23,14 @@ module.exports = {
         'api/artwork'
       ],
     },
+    {
+      type: 'category',
+      label: 'Regras',
+      items: [ 
+        'rule/useraccount-rule',  
+        'rule/artwork-rule',
+        'rule/commission-rule'
+      ],
+    },
   ],
 };
