@@ -58,6 +58,7 @@ Bom agora vamos para as regras de negócios das comissões! Será divida em regr
 1. **Definição Clara do Escopo do Projeto**
     - Antes de iniciar, o cliente deve fornecer uma descrição detalhada do trabalho, incluindo referências visuais, estilo desejado, prazo e uso pretendido da obra.
     - O artista deve revisar o escopo e discutir qualquer ponto que não esteja claro para evitar retrabalho ou alterações inesperadas.
+    - O comprador pode requisitar uma comissão a partir de um serviço já prestado ou requisitar uma comissão de um serviço personalizado.
 
 2. **Preço e Formas de Pagamento**
     - O preço deve ser definido no início e aprovado por ambas as partes. O valor pode variar com base na complexidade, urgência, tamanho ou requisitos específicos da obra.

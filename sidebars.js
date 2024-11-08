@@ -32,5 +32,26 @@ module.exports = {
         'rule/commission-rule'
       ],
     },
+    {
+      type: 'category',
+      label: 'Histórias',
+      items: [ 
+        {
+          type: 'category',
+          label: '2024',
+          items: [
+            {
+              type: 'category',
+              label: "Sprint 1 - Out/Nov",
+              items: [
+                'hist/2024/out-nov/scrum-6',
+                'hist/2024/out-nov/scrum-7',
+                'hist/2024/out-nov/scrum-8',
+              ]
+            }
+          ]
+        }
+      ],
+    },
   ],
 };
