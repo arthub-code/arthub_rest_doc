@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start-deploy": "PORT=${PORT:-3000} HOST=0.0.0.0 docusaurus start",
+    "start-deploy": "docusaurus start --port ${PORT:-3000} --host 0.0.0.0",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",

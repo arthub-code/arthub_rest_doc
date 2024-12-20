@@ -12,11 +12,6 @@ module.exports = {
   organizationName: 'arthub', // Repositório ou organização GitHub
   projectName: 'arthub-microservices', // Nome do projeto
 
-  devServer: {
-    port: process.env.PORT || 3000,
-    host: '0.0.0.0',
-  },
-
   presets: [
     [
       '@docusaurus/preset-classic',
