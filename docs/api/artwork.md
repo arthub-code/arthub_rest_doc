@@ -61,7 +61,7 @@ sidebar_label: Artes
         "endScheduleDate": "2024-10-05",
         "artImageRef": [
             {
-                "uploadType": "PINTEREST_API",
+                "uploadType": "EXTERNAL_UPLOAD",
                 "fileData": {
                   "base64": null,
                   "fileName": null,
@@ -74,7 +74,7 @@ sidebar_label: Artes
     }
   ```
   Você pode enviar as imagens de referência por duas formas:
-  1. Utilizando a integração com o Pinterest. O Arthub oferece a opção do usuário escolher imagens do pinterest, se esse for o caso o `uploadType` deve ter o valor de **`"PINTEREST_API"`**, o link da imagem deve ser fornecido no atributo `imageLink` e nesse caso **obrigatóriamente** o objeto `fileData` e seus atributos **devem** ser nulos, como no exemplo acima;
+  1. Utilizando a integração com o bancos de imagens externos (pinterest, devianart, ...). O Arthub oferece a opção do usuário escolher imagens em bancos de imagens, se esse for o caso o `uploadType` deve ter o valor de **`"EXTERNAL_UPLOAD"`**, o link da imagem deve ser fornecido no atributo `imageLink` e nesse caso **obrigatóriamente** o objeto `fileData` e seus atributos **devem** ser nulos, como no exemplo acima;
 
   2. Fazendo upload do arquivo imagem do próprio dispositivo do usuário. Nesse caso ele vai poder fornecer a imagem do dispositivo, e para isso o `uploadType` deve ter o valor de **`"DEVICE_UPLOAD"`**, o objeto `fileData` deve ter o atributo `"base64"` preenchido com os bytes do arquivo imagem no formato `BASE 64`, o atributo `fileName` preenchido com o nome do arquivo,  o atributo `contentType` com o content type do arquivo, e **obrigatóriamente** o atributo `imageLink` **deve** ser nulo, como no exemplo abaixo:
   ```json
@@ -256,7 +256,7 @@ Exemplo de respota de sucesso:
   {
     "artImageRef": [
         {
-            "uploadType": "PINTEREST_API", 
+            "uploadType": "EXTERNAL_UPLOAD", 
             "fileData": {
                 "base64": null,
                 "fileName": null,
@@ -309,7 +309,7 @@ Exemplo de respota de sucesso:
           },
           {
               "refId": "c3e5e783-e560-464f-9bb6-842935331282",
-              "uploadType": "PINTEREST_API",
+              "uploadType": "EXTERNAL_UPLOAD",
               "fileData": {
                 "base64": null,
                 "fileName": null,
